@@ -46,6 +46,65 @@
     @apply text-sm font-medium text-slate-600 transition-colors hover:text-brand-600;
   }
 
+  .nav-link-active {
+    @apply text-brand-600;
+  }
+
+  /* Small rounded tag used for category links */
+  .chip {
+    @apply inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-brand-600;
+  }
+
+  /* Pagination */
+  .pagination-item {
+    @apply inline-flex min-w-9 items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600;
+  }
+
+  .pagination-item-active {
+    @apply border-brand-600 bg-brand-600 text-white hover:bg-brand-600;
+  }
+
+  .pagination-item-disabled {
+    @apply pointer-events-none text-slate-400;
+  }
+
+  /* Rich text coming from the admin editor */
+  .post-content {
+    @apply text-base leading-relaxed text-slate-700;
+  }
+
+  .post-content > * + * {
+    @apply mt-5;
+  }
+
+  .post-content h2 {
+    @apply mt-10 text-2xl font-bold tracking-tight text-brand-900;
+  }
+
+  .post-content h3 {
+    @apply mt-8 text-xl font-semibold text-brand-900;
+  }
+
+  .post-content a {
+    @apply font-medium text-brand-600 underline hover:text-brand-700;
+  }
+
+  .post-content ul {
+    @apply list-disc pl-6;
+  }
+
+  .post-content ol {
+    @apply list-decimal pl-6;
+  }
+
+  .post-content blockquote {
+    @apply border-l-4 border-brand-500 pl-4 italic text-slate-600;
+  }
+
+  .post-content img {
+    @apply h-auto max-w-full rounded-xl;
+  }
+
   /* Form helpers (extra, reused by the contact form) */
   .form-label {
     @apply mb-1.5 block text-sm font-medium text-slate-700;
